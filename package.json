@@ -1,0 +1,21 @@
+{
+  "name": "mcp-learn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "type": "module",
+  "license": "ISC",
+  "packageManager": "pnpm@10.22.0",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "~1.16.0",
+    "@types/node": "^24.10.1",
+    "biome": "^0.3.3",
+    "openmeteo": "^1.2.2",
+    "zod": "3.25.76"
+  }
+}
