@@ -40,8 +40,12 @@ Possible transports are:
 1. StandardIO  
    - MCP client can interact with the server process running in the same host machine 
    - This is a old way of doing thigs, but it is still very useful for local workloads
-2. SSE - Being replaced by stremable HTTP
-3. HTTP Streaming 
+2. SSE 
+   - Sends the server STDIO via the internet to the MCP clinet
+   - Issues will arrise when a packet is dropped from SSE and we need to re-establish the connection, session and the context
+   - Being replaced by stremable HTTP
+3. Streamable HTTP
+   - Resumable sessions
 
 ### Useful patterns
 1. Avoid creating a tool for a traditional API. Model will stuggle to do a task require sequential execution. Instead create a job - composition of api to do a task so it is easer a LLM to follow.
